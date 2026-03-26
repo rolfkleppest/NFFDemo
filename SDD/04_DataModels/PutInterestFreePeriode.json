@@ -1,0 +1,83 @@
+PUT https://knowit.sandbox.mambu.com/api/loans/8ab001209ab54718019ac133810d298f/schedule: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.86.37",
+        "family": "IPv4",
+        "port": 55172
+      },
+      "remote": {
+        "address": "63.35.146.173",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": null,
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": null,
+          "organizationalUnit": null,
+          "commonName": "*.sandbox.mambu.com",
+          "alternativeNames": "DNS:*.sandbox.mambu.com"
+        },
+        "issuer": {
+          "country": "US",
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": "Amazon",
+          "organizationalUnit": null,
+          "commonName": "Amazon RSA 2048 M04"
+        },
+        "validFrom": "Dec  8 00:00:00 2025 GMT",
+        "validTo": "Jan  6 23:59:59 2027 GMT",
+        "fingerprint": "4C:3E:85:63:AC:69:E7:B5:89:83:54:43:83:46:BC:FF:FD:49:BD:B0",
+        "serialNumber": "03162376ddd97bbd18307f24e0d8771b"
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Basic YXBpdXNlcjo1MFhNQVh3ZXN0ZXJu",
+    "accept": "application/vnd.mambu.v2+json,application/vnd.mambu.v2+json",
+    "content-type": "application/json",
+    "apikey": "I8zPeIO8RRQ7pSzGgiffXDOJs5PyvZOf",
+    "user-agent": "PostmanRuntime/7.52.0",
+    "postman-token": "0a7c6cb0-c272-48b0-bb7f-281df7a9107a",
+    "accept-encoding": "gzip, deflate, br",
+    "content-length": "473703",
+    ":path": "/api/loans/8ab001209ab54718019ac133810d298f/schedule",
+    ":method": "PUT",
+    ":authority": "knowit.sandbox.mambu.com",
+    ":scheme": "https"
+  },
+  "Request Body": "The console only shows request bodies smaller than 10 KB inline. To view the complete body, inspect it by clicking Open.",
+  "Response Headers": {
+    ":status": 404,
+    "date": "Wed, 25 Mar 2026 20:28:07 GMT",
+    "content-type": "application/json",
+    "content-length": "144",
+    "server": "Apache",
+    "session-id": "no-session-id",
+    "strict-transport-security": "max-age=63072001; includeSubDomains; preload",
+    "x-xss-protection": "1",
+    "content-security-policy": "object-src 'none'; upgrade-insecure-requests;",
+    "referrer-policy": "no-referrer",
+    "x-content-type-options": "nosniff",
+    "feature-policy": "oversized-images 'none'; unsized-media 'none';",
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache"
+  },
+  "Response Body": "{\"errors\":[{\"errorCode\":100,\"errorSource\":\"Invalid loan account id: 8ab001209ab54718019ac133810d298f\",\"errorReason\":\"INVALID_LOAN_ACCOUNT_ID\"}]}"
+}

@@ -1,0 +1,3 @@
+Src/
+.env.local
+*.env

@@ -1,0 +1,83 @@
+GET https://knowit.sandbox.mambu.com/api/loans/8a19dc979d254c1d019d2630046f7e3d?detailsLevel=FULL: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.86.37",
+        "family": "IPv4",
+        "port": 49675
+      },
+      "remote": {
+        "address": "99.80.167.133",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": null,
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": null,
+          "organizationalUnit": null,
+          "commonName": "*.sandbox.mambu.com",
+          "alternativeNames": "DNS:*.sandbox.mambu.com"
+        },
+        "issuer": {
+          "country": "US",
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": "Amazon",
+          "organizationalUnit": null,
+          "commonName": "Amazon RSA 2048 M04"
+        },
+        "validFrom": "Dec  8 00:00:00 2025 GMT",
+        "validTo": "Jan  6 23:59:59 2027 GMT",
+        "fingerprint": "4C:3E:85:63:AC:69:E7:B5:89:83:54:43:83:46:BC:FF:FD:49:BD:B0",
+        "serialNumber": "03162376ddd97bbd18307f24e0d8771b"
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Basic YXBpdXNlcjo1MFhNQVh3ZXN0ZXJu",
+    "accept": [
+      "application/vnd.mambu.v2+json",
+      "application/vnd.mambu.v2+json"
+    ],
+    "apikey": "I8zPeIO8RRQ7pSzGgiffXDOJs5PyvZOf",
+    "user-agent": "PostmanRuntime/7.52.0",
+    "postman-token": "273b4a55-a19e-405a-8282-53fa9ded6801",
+    "accept-encoding": "gzip, deflate, br",
+    ":path": "/api/loans/8a19dc979d254c1d019d2630046f7e3d?detailsLevel=FULL",
+    ":method": "GET",
+    ":authority": "knowit.sandbox.mambu.com",
+    ":scheme": "https"
+  },
+  "Response Headers": {
+    ":status": 200,
+    "date": "Wed, 25 Mar 2026 18:11:07 GMT",
+    "content-type": "application/vnd.mambu.v2+json",
+    "content-length": "3618",
+    "server": "Apache",
+    "session-id": "no-session-id",
+    "strict-transport-security": "max-age=63072001; includeSubDomains; preload",
+    "x-xss-protection": "1",
+    "content-security-policy": "object-src 'none'; upgrade-insecure-requests;",
+    "referrer-policy": "no-referrer",
+    "x-content-type-options": "nosniff",
+    "feature-policy": "oversized-images 'none'; unsized-media 'none';",
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache"
+  },
+  "Response Body": "{\"encodedKey\":\"8a19dc979d254c1d019d2630046f7e3d\",\"id\":\"99004082\",\"accountHolderType\":\"CLIENT\",\"accountHolderKey\":\"8a19b6a69d255395019d262ee2a572f4\",\"creationDate\":\"2026-03-25T19:09:34+01:00\",\"approvedDate\":\"2026-03-25T19:09:42+01:00\",\"lastModifiedDate\":\"2026-03-25T19:09:41+01:00\",\"accountState\":\"APPROVED\",\"productTypeKey\":\"8a19b2ee97346d40019734c0b48d2866\",\"loanName\":\"SPK Boliglån Annuitet\",\"loanAmount\":253000.0000000000,\"paymentMethod\":\"HORIZONTAL\",\"assignedBranchKey\":\"8a19c1ab966cca9901966cf9dceb29b8\",\"accruedInterest\":0,\"interestFromArrearsAccrued\":0,\"accruedPenalty\":0,\"allowOffset\":false,\"arrearsTolerancePeriod\":10,\"accountArrearsSettings\":{\"encodedKey\":\"8a19dc979d254c1d019d263004707e43\",\"toleranceCalculationMethod\":\"ARREARS_TOLERANCE_PERIOD\",\"dateCalculationMethod\":\"ACCOUNT_FIRST_WENT_TO_ARREARS\",\"nonWorkingDaysMethod\":\"INCLUDED\",\"toleranceFloorAmount\":100.00000000000000000000,\"tolerancePeriod\":10},\"latePaymentsRecalculationMethod\":\"LAST_INSTALLMENT_INCREASE\",\"balances\":{\"redrawBalance\":0,\"principalDue\":0,\"principalPaid\":0,\"principalBalance\":0,\"interestDue\":0,\"interestPaid\":0,\"interestBalance\":0,\"interestFromArrearsBalance\":0,\"interestFromArrearsDue\":0,\"interestFromArrearsPaid\":0,\"feesDue\":0,\"feesPaid\":0,\"feesBalance\":0,\"penaltyDue\":0,\"penaltyPaid\":0,\"penaltyBalance\":0,\"holdBalance\":0},\"disbursementDetails\":{\"encodedKey\":\"8a19dc979d254c1d019d263004707e42\",\"transactionDetails\":{\"encodedKey\":\"8a19dc979d254c1d019d2630046f7e3e\",\"transactionChannelKey\":\"8a19d3fe956e7ba00195701752d01366\",\"transactionChannelId\":\"cash\",\"internalTransfer\":false},\"fees\":[]},\"prepaymentSettings\":{\"prepaymentRecalculationMethod\":\"REDUCE_NUMBER_OF_INSTALLMENTS_NEW\",\"elementsRecalculationMethod\":\"TOTAL_EXPECTED_FIXED\",\"principalPaidInstallmentStatus\":\"PARTIALLY_PAID\",\"applyInterestOnPrepaymentMethod\":\"AUTOMATIC\"},\"penaltySettings\":{\"loanPenaltyCalculationMethod\":\"NONE\"},\"scheduleSettings\":{\"hasCustomSchedule\":false,\"principalRepaymentInterval\":1,\"gracePeriod\":0,\"gracePeriodType\":\"PAY_INTEREST_ONLY\",\"repaymentInstallments\":24,\"shortMonthHandlingMethod\":\"LAST_DAY_IN_MONTH\",\"fixedDaysOfMonth\":[15],\"scheduleDueDatesMethod\":\"FIXED_DAYS_OF_MONTH\",\"periodicPayment\":0,\"repaymentScheduleMethod\":\"DYNAMIC\",\"paymentPlan\":[]},\"interestSettings\":{\"interestRateReviewCount\":1,\"interestRateReviewUnit\":\"DAYS\",\"interestRateSource\":\"INDEX_INTEREST_RATE\",\"accrueInterestAfterMaturity\":false,\"interestApplicationMethod\":\"REPAYMENT_DUE_DATE\",\"interestBalanceCalculationMethod\":\"PRINCIPAL_AND_INTEREST\",\"interestCalculationMethod\":\"DECLINING_BALANCE_DISCOUNTED\",\"interestChargeFrequency\":\"ANNUALIZED\",\"interestSpread\":0,\"interestRate\":4.00000000000000000000,\"interestType\":\"SIMPLE_INTEREST\",\"accrueLateInterest\":false},\"assets\":[],\"guarantors\":[],\"fundingSources\":[],\"tranches\":[],\"futurePaymentsAcceptance\":\"NO_FUTURE_PAYMENTS\",\"settlementAccountKey\":\"8a19dc979d254c1d019d2630046f7e3f\",\"currency\":{\"currencyCode\":\"NOK\",\"code\":\"NOK\"},\"plannedInstallmentFees\":[],\"adjustTotalDueForInstallmentsWithDifferentInterval\":false,\"allowAdvanceRepayment\":false,\"_loanAccountDisbursementDetails\":[{\"loanAccountDisbursementKid\":\"9955664488\",\"loanAccountDisbursementAmount\":\"253000\",\"loanAccountDisbursementAccountNr\":\"15151515150\",\"_index\":\"0\",\"loanAccountDisbursementDate\":\"2026-03-25\",\"loanAccountDisbursementMsg\":\"Ubetaling av lån x\",\"loanAccountDisbursementReady\":\"true\"}],\"_panteobjekter\":[{\"pantPanteobjektnr\":\"123456\",\"_index\":\"0\"}],\"_sikkerhetsdokumenter\":[{\"_index\":\"0\",\"sikkerhetUtlopsdato\":\"2035-06-05\",\"sikkerhetDokumenttype\":\"Pansettelseserklæring\",\"sikkerhetDagboknr\":\"96767670000\",\"sikkerhetTinglystDato\":\"2024-06-05\"}]}"
+}

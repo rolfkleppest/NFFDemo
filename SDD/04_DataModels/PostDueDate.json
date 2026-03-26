@@ -1,0 +1,83 @@
+POST https://knowit.sandbox.mambu.com/api/loans/8a19a4029d1e987b019d1f2d626d6dc9:changeDueDatesSettings: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.86.37",
+        "family": "IPv4",
+        "port": 63472
+      },
+      "remote": {
+        "address": "99.80.167.133",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": null,
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": null,
+          "organizationalUnit": null,
+          "commonName": "*.sandbox.mambu.com",
+          "alternativeNames": "DNS:*.sandbox.mambu.com"
+        },
+        "issuer": {
+          "country": "US",
+          "stateOrProvince": null,
+          "locality": null,
+          "organization": "Amazon",
+          "organizationalUnit": null,
+          "commonName": "Amazon RSA 2048 M04"
+        },
+        "validFrom": "Dec  8 00:00:00 2025 GMT",
+        "validTo": "Jan  6 23:59:59 2027 GMT",
+        "fingerprint": "4C:3E:85:63:AC:69:E7:B5:89:83:54:43:83:46:BC:FF:FD:49:BD:B0",
+        "serialNumber": "03162376ddd97bbd18307f24e0d8771b"
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Basic YXBpdXNlcjo1MFhNQVh3ZXN0ZXJu",
+    "accept": "application/vnd.mambu.v2+json,application/vnd.mambu.v2+json",
+    "content-type": "application/json",
+    "apikey": "I8zPeIO8RRQ7pSzGgiffXDOJs5PyvZOf",
+    "user-agent": "PostmanRuntime/7.52.0",
+    "postman-token": "d29dbb03-8251-4e4c-b6c9-50346d7201a1",
+    "accept-encoding": "gzip, deflate, br",
+    "content-length": "109",
+    ":path": "/api/loans/8a19a4029d1e987b019d1f2d626d6dc9:changeDueDatesSettings",
+    ":method": "POST",
+    ":authority": "knowit.sandbox.mambu.com",
+    ":scheme": "https"
+  },
+  "Request Body": "{\r\n  \"fixedDaysOfMonth\": [\r\n    25\r\n  ],\r\n  \"notes\": \"string\",\r\n  \"valueDate\": \"2026-03-21T13:37:50+01:00\"\r\n}",
+  "Response Headers": {
+    ":status": 204,
+    "date": "Wed, 25 Mar 2026 18:49:49 GMT",
+    "server": "Apache",
+    "session-id": "no-session-id",
+    "strict-transport-security": "max-age=63072001; includeSubDomains; preload",
+    "x-xss-protection": "1",
+    "content-security-policy": "object-src 'none'; upgrade-insecure-requests;",
+    "referrer-policy": "no-referrer",
+    "x-content-type-options": "nosniff",
+    "feature-policy": "oversized-images 'none'; unsized-media 'none';",
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache"
+  }
+}
+JSONError: No data, empty input at 1:1
+
+^
